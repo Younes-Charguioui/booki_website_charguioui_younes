@@ -56,15 +56,23 @@ body {
     color: var(--main-bg-color)
 }
 
+.raleway-700{
+    font-weight: 700;
+}
+
+.raleway-400{
+    font-weight: 400;
+}
+
 /****** Barre de navigation ***********/
+
 .nav-img{
     height: 19px;
-    margin: 25px;
+    margin-top: 25px;
 }
 .navbar{
-    width: 100%;
     display: flex;
-    
+    margin-bottom: 10px;
 }
 
 .navbar ul{
@@ -72,30 +80,23 @@ body {
 
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;*/
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
     width: 100%;
 }
 
 .navbar li {
     display: flex;
-    /*flex-direction: column;*/
-    height: 100%;
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
     padding: 16px;
-    border: solid;
-    border-color: white;
+    border-top-style: solid;
+    border-top-color: white;
 }
 
 .navbar a:hover {
     color: #0065FC;
-    border-top-style: solid;
     border-top-color: #0065FC;
 }
 
