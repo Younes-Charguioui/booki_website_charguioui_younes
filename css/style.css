@@ -124,6 +124,7 @@ body {
 .search-bar i {
     color: black;
     padding: 18px;
+    font-size: 18px;
 }
 
 .search-bar input {
@@ -148,6 +149,44 @@ body {
 
 .search-bar button:active {
     background: rgb(0, 0, 255);
+}
+
+/*********** Filtres ******************/
+
+.filtres{
+    display: flex;
+    align-items: center;
+}
+
+.categorie-section{
+    list-style: none;
+    display: flex;
+}
+
+.categorie{
+    border: solid;
+    border-radius: 25px;
+    border-color: #F2F2F2;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+}
+
+.categorie i{
+    font-size: 17px;
+    padding-right: 10px;
+}
+
+.categorie a{
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.categorie:hover{
+    background: #d2d2d2;
 }
 
 
