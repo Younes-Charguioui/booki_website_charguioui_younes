@@ -20,7 +20,7 @@
         <!--  ******** Navbar ********* -->
         <header>  
             <nav class="navbar">
-                <img src="images/logo/Booki.png" class="nav-img">
+                <img src="images/logo/Booki.png" class="nav-img" alt="logo de la marque">
                 <ul >
                     <li>
                         <a href="#" class="nav-items">Hébergements</a>
@@ -37,12 +37,12 @@
         <p class="raleway-400">En plein centre-ville ou en pleine nature</p>
 
         <!--  ******** Barre de recherche ********* -->
-        <form method="get" action="">
+        <form method="get">
             <div class="search-bar">
                 <i class="fa-solid fa-location-dot"></i>
-                <input type="input" name="search-input" class="raleway-700" placeholder="Où recherchez vous ?">
+                <input type="text" name="search-input" class="raleway-700" placeholder="Où recherchez vous ?">
                 <button class="raleway-700 no-phone">Rechercher</button>
-                <button class="raleway-700 only-phone"><i class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i></i></button>
+                <button class="raleway-700 only-phone"><i class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i></button>
             </div>
         </form>
 
@@ -68,7 +68,11 @@
             </ul>
         </div>
 
-        <br><br><br><br>
+        <div class="logement-dispo">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            
+        </div>
 
         <main>
             <div class="hebergements-and-populaires">
@@ -76,7 +80,7 @@
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <article class="card">
-                            <img src="./images/hebergements/fred-kleber.jpg " alt="Image de la chambre d'hôtel montrant deux lits">
+                            <img src="./images/hebergements/fred-kleber.jpg " alt="Image de la chambre d'hôtel montrant deux lits"/>
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel du port</h3>
@@ -88,6 +92,7 @@
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,6 +110,7 @@
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -122,6 +128,7 @@
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -139,6 +146,7 @@
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -156,6 +164,7 @@
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -173,11 +182,13 @@
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                             <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </article>
                     </div>
+                    <h2 class="section-showmores">Afficher plus</h2>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -240,7 +251,71 @@
                 </section>
             </div>
         </main>
-        <footer></footer>
+
+        <div class="activites">
+            <h2 class="section-title">Activités à Marseille</h2>
+            <div class="activites-cards">
+                <article class="card">
+                    <img src="./images/activites/reno-laithienne.jpg" alt="port avec de nombreux bateaux">
+                    <div class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Vieux-Port</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/activites/paul-hermann.jpg" alt="château sur une falaise">
+                    <div class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Fort de Pomègues</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/activites/kilyan-sockalingum.jpg" alt="plusieurs falaise avec une mer en arrière plan">
+                    <div class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Parc national des Calanques</h3>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/activites/florian-wehde.jpg" alt="plan avec de nombreuse toiture et une cathédrale en arrière plan">
+                    <div class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-section">
+                <article class="footer-article">
+                    <h3>À propos</h3>
+                    <ul>
+                        <li><a href="">Fonctionnement du site</a></li>
+                        <li><a href="">Conditions générales </a></li>
+                        <li><a href="">Données et confidentialité</a></li>
+                    </ul>
+                </article>
+                <article class="footer-article">
+                    <h3>Nos hébergements</h3>
+                    <ul>
+                        <li><a href="">Charte qualité</a></li>
+                        <li><a href="">Proposer votre hôtel</a></li>
+                    </ul>
+                </article>
+                <article class="footer-article">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li><a href="">Centre d’aide</a></li>
+                        <li><a href="">Nous contacter</a></li>
+                    </ul>
+                </article>
+            </div>
+        </footer>
     </div>
 </body>
 
