@@ -434,6 +434,44 @@ footer{
         margin: 0px;
     }
 
+<<<<<<< Updated upstream
+=======
+    .no-phone{
+        display: none;
+    }
+
+    .only-phone {
+        display: inline;
+    }
+
+    /**************** Navbar ****************/
+
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar img {
+        object-fit: contain;
+    }
+
+    .navbar ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar li {
+        border-bottom: 2px solid #d2d2d2;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .navbar li:hover {
+        border-bottom: 2px solid #0065FC;
+    }
+
+>>>>>>> Stashed changes
     .navbar a {
         text-decoration: none;
         color: black;
@@ -443,21 +481,28 @@ footer{
     }
 
     .navbar a:hover {
-        color: #0065FC;
-        border-bottom-color: #0065FC;
-        border-top-color: white;
+        border-top-style: none;
     }
 
-    .no-phone{
-        display: none;
+    /****** Deux titre à la suite ******/
+    .acceuil-title {
+        margin: 20px;
+        font-size: 22px;
     }
 
-    .only-phone {
-        display: inline;
+    /************** SearchBar **********/
+    .search-bar {
+        margin: 30px;
+        width: 80%;
+    }
+
+    .search-bar input {
+        width: 100%;
     }
 
     .search-bar button{
         border-radius: 15px 15px 15px 15px;
+        padding: 0px;
     }
 
     /********* Filtres **********/
@@ -486,6 +531,7 @@ footer{
     .categorie .raleway-700{
         font-size: 14px;
     }
+<<<<<<< Updated upstream
     /*
     .categorie{
     display: flex;
@@ -496,6 +542,19 @@ footer{
     padding: 10px 20px 10px 20px;
     margin: 0px 5px 0px 0px;
     }*/
+=======
+
+    /******* Note d'information **********/
+
+    .logement-dispo {
+        margin: 20px;
+    }
+
+    .logement-dispo p {
+        font-size: 16px;
+    }
+
+>>>>>>> Stashed changes
     /**** Hebergements and populaires ****/
 
     .hebergements-and-populaires {
@@ -535,10 +594,23 @@ footer{
     }
 
     .populaires-cards .card-title{
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle{
+        font-size: 14px;
+    }
+
+    .hebergements-cards .card-title {
+        font-size: 16px;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: 14px;
+    }
+
+    .section-showmores {
+        margin: 0px;
         font-size: 18px;
     }
 
@@ -555,6 +627,10 @@ footer{
 
     .activites-cards img {
         height: 141px;
+    }
+
+    .activites-cards .card-title {
+        font-size: 16px;
     }
 
     /******** footer **********/
