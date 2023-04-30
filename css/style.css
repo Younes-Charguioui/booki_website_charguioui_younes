@@ -280,6 +280,7 @@ header {
 }
 
 .hebergements .section-title {
+    margin-top: 35px;
     margin-bottom: 20px;
 }
 
@@ -526,9 +527,10 @@ footer{
     body {
         margin: 0px;
     }
+
     .main-container {
         padding: 0px;
-        margin: 0px;
+        /*margin: 0px;*/
     }
 
     .no-phone{
@@ -540,12 +542,22 @@ footer{
     }
 
     /**************** Navbar ****************/
+    header {
+        margin: 0px;
+        padding: 0px;
+    }
 
     .navbar{
         flex-direction: column;
     }
+
+    .nav-img {
+        align-self: center;
+    }
+
     .navbar img {
-        object-fit: contain;
+        padding: 0px;
+        margin: 30px 0px 15px 0px;
     }
 
     .navbar ul {
@@ -559,35 +571,47 @@ footer{
     .navbar li {
         border-bottom: 2px solid #d2d2d2;
         justify-content: center;
-        padding: 20px 0px 20px 0px;
+        padding: 0px;
+        margin: 0px;
     }
 
     .navbar li:hover {
         border-bottom: 2px solid #0065FC;
     }
 
+    .navbar li:hover a {
+        color: #0065FC;
+    }
+
+    .nav-items a {
+        height: 100%;
+    }
+
     .navbar a {
-        text-decoration: none;
+        display: block;
         color: black;
-        padding: 16px;
+        margin: 0px;
         border-bottom-style: solid;
         border-bottom-color: white;
+        width: 100%;
+        text-align: center;
     }
 
     .navbar a:hover {
-        border-top-style: none;
+        border-top-color: white;
     }
 
     /****** Deux titre à la suite ******/
-    .acceuil-title {
-        margin: 20px;
-        font-size: 22px;
+    .double-textes {
+        margin: 30px 20px 35px 20px;
+        font-size: 16px;
     }
 
     /************** SearchBar **********/
     .search-bar {
-        margin: 30px;
-        width: 80%;
+        margin: 0px 20px;
+        margin-bottom: 35px;
+        width: 90%;
     }
 
     .search-bar input {
@@ -604,7 +628,11 @@ footer{
     .filtres {
         flex-direction: column;
         align-items: start;
-        margin: 20px;
+        margin: 0px 20px;
+    }
+
+    .filtres-text {
+        margin-bottom: 20px;
     }
 
     .categorie-section {
@@ -613,12 +641,13 @@ footer{
         grid-auto-rows: auto;
         width: 100%;
         padding: 0px;
+        margin: 0px;
     }
 
     .categorie {
         width: 80%;
         padding: 10px 0px 10px 20px;
-        margin-bottom: 10px;
+        margin: 0px;
         justify-content: center;
     }
 
@@ -629,7 +658,11 @@ footer{
     /******* Note d'information **********/
 
     .logement-dispo {
-        margin: 20px;
+        margin: 35px 20px 35px 20px;
+    }
+
+    .logement-dispo i {
+        margin-right: 10px;
     }
 
     .logement-dispo p {
@@ -639,24 +672,36 @@ footer{
     /**** Hebergements and populaires ****/
 
     .hebergements-and-populaires {
+        margin: 0px;
         padding: 0px;
         flex-direction: column-reverse;
     }
 
-    .hebergements-and-populaires .hebergements{
+    .hebergements-and-populaires .hebergements {
         background-color: white;
+    }
+
+    .hebergements-and-populaires .populaires {
+        margin: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .hebergements-and-populaires section {
         border-radius: 0px;
     }
 
+    .populaires-title {
+        margin-bottom: 15px;
+    }
+
     .populaires-cards {
         flex-direction: column;
+        gap: 15px;
         font-size: 18px; /* font size des étoiles */
     }
 
-    .hebergements-cards{
+    .hebergements-cards {
         display: inline-grid;
         grid-template-columns: 100%;
         grid-auto-rows: auto;
@@ -668,10 +713,11 @@ footer{
 
     .populaires-cards .card {
         width: 100%;
+        margin-top: 0px;
     }
 
     .populaires-cards img {
-        height: 180px;
+        height: 146px;
     }
 
     .populaires-cards .card-title{
@@ -695,15 +741,32 @@ footer{
         font-size: 18px;
     }
 
+    .hebergements-and-populaires section {
+        padding: 0px 20px;
+        margin-bottom: 55px;
+    }
+
     /****** Activites *********/
 
+    .activites {
+        padding: 0px 30px;
+        padding-bottom: 65px;
+        margin: 0px;
+    }
+
+    .activites .section-title {
+        margin: 30px 0px;
+    }
+
     .activites .activites-cards {
+        display: flex;
         flex-direction: column;
+        gap: 15px;
     }
 
     .activites-cards .card {
         width: 100%;
-        margin-bottom: 10px;
+        height: fit-content;
     }
 
     .activites-cards img {
@@ -712,12 +775,23 @@ footer{
 
     .activites-cards .card-title {
         font-size: 16px;
+        padding: 0px;
+        margin: 20px 19px;
+        text-align: initial;
+    }
+
+    .activites-cards .card-content {
+        height: fit-content;
     }
 
     /******** footer **********/
 
     .footer-section {
         grid-template-columns: 100%;
+    }
+
+    .footer-article {
+        margin: 30px 0px 15px 30px;
     }
 
 }
